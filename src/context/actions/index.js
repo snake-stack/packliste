@@ -1,0 +1,11 @@
+const BaseInfoActions = {
+    ADD_EXPORT_DATA: "ADD_EXPORT_DATA",
+    SET_EXPORT_DATA: "SET_EXPORT_DATA",
+    SET_BASE_EXPORT_FIELDS: "SET_BASE_EXPORT_FIELDS",
+    SET_BASE_ACTION: "SET_BASE_ACTION",
+    SET_BASE_INDEX: "SET_BASE_INDEX"
+}
+
+export const actions = {
+    ...BaseInfoActions,
+}

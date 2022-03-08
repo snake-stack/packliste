@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "Amiko";
+  src: url("/fonts/amiko/Amiko-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+$primary-color: #292929;
+$secondary-color: #292929;
+
+*{
+  font-family: "Amiko", serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $primary-color;
+  font-weight: 900;
+}
+
+h1, h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 22px;
+  color: $secondary-color;
+  margin-bottom: 0;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+.intro-text {
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.data-table {
+  margin-top: 50px;
+}
+
+@media print {
+  body {
+    color: #000;
+    background-color: #fff;
+  }
+
+  h1, h2 {
+    font-size: 18pt;
+  }
+
+  h3 {
+    font-size: 15pt;
+  }
+
+  h4 {
+    font-size: 14pt;
+  }
+
+  .hide_print, hr, button {
+    display: none !important;
+  }
+
+  .data-table {
+    margin-top: 5px;
+  }
+
+  tr, td, th {
+    font-size: 10pt !important;
+  }
+
+  @page {
+    margin: 2cm;
+  }
+}
